@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Quizapp - play</title>
+    <link rel="stylesheet" href="play.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div id="game" class="justify-center flex-column">
+            <div class="question-number">
+                <h2>Question <br><br><span class="question-num-value"></span> of <span class="total-question"></span></h2>
+                <div id="hod-item">
+                    <h2 class="hod-prefix">
+                    Score
+                    </h2>
+                    <h1 class="hod-main-text" id="score">
+                    0
+                    </h1>
+                </div>
+            </div>
+
+            <div class="question">
+                
+            </div>
+            <div class="options">
+                <div id="0" class="option1" onclick="check(this)"></div>
+                <div id="1" class="option2" onclick="check(this)"></div>
+                <div id="2" class="option3" onclick="check(this)"></div>
+            </div>
+            <div class="button">
+                <button type="button" class="btn" onclick="next()">Next</button>
+            </div>
+        </div>
+    </div>
+    <script src="play.js"></script>
+</body>
+</html>
